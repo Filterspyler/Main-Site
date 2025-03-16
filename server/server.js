@@ -16,6 +16,17 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log(err));
 */
 
+app.get('/products', (req, res) => {
+    res.json([
+        { id: 1, name: 'Product 1' },
+        { id: 2, name: 'Product 2' }
+    ]);
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/public', 'index.html'));
+});
+
 app.get("/", (req, res) => res.send("Server is running..."));
 
 const PORT = process.env.PORT || 5000;

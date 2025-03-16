@@ -1,18 +1,26 @@
+// frontend/src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
+import Home from './components/Pages/Home';
+import Products from './components/Pages/Products';
+import NotFound from './components/Pages/NotFound';
 
+const root = ReactDOM.createRoot(document.getElementById('root')); // Create the root element
 
-// imports
-import Navbar from './components/Site/Navbar.jsx';
-import Section_1 from './components/Sections/Homepage/Section-1';
-import Section_2 from './components/Sections/Homepage/Section-2';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Navbar />
-    <Section_1 />
-    <Section_2 />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Router>
+        <Routes>
+            {/* Route for homepage */}
+            <Route path="/" element={<Home />} />
+
+            {/* Route for products page */}
+            <Route path="/products" element={<Products />} />
+
+            <Route path="*" element={<NotFound />} />
+        </Routes>
+        </Router>
+    </React.StrictMode>
 );
