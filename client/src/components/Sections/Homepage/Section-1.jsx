@@ -11,6 +11,7 @@ const Section_1 = () => {
                   <p>Materiale: Høyverdig stål</p>
                   <p>Dimensjoner: 42mm lang, 22mm i diameter</p>
                   <p>Vekt: 70g</p>
+                  <p>TEST</p>
               </div>
           </div>
 
