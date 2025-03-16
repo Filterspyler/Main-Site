@@ -8,7 +8,9 @@ const Section_1 = () => {
               <img src="/img/produktbilde-1.png" className="h-20 sm:h-28 md:h-30 lg:h-32 rotate-[22deg]" />
               <div className="flex flex-col space-y-4">
                   <h1 className="text-lg sm:text-xl md:text-2xl lg:3xl font-bold">Spesifikasjoner</h1>
-                  <p>blalnlk</p>
+                  <p>Materiale: Høyverdig stål</p>
+                  <p>Dimensjoner: 42mm lang, 22mm i diameter</p>
+                  <p>Vekt: 70g</p>
               </div>
           </div>
 
