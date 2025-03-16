@@ -5,7 +5,7 @@ const Section_1 = () => {
     <>
       <div className="relative w-full flex flex-col items-center justify-center h-screen">
           <div className="flex space-x-14">
-              <img src="/img/produktbilde-1.png" className="h-20 sm:h-28 md:h-30 lg:h-32 rotate-[22deg]" />
+              <img src="/img/produktbilde-1.png" alt="Filterspyler product" className="h-20 sm:h-28 md:h-30 lg:h-32 rotate-[22deg]" />
               <div className="flex flex-col space-y-4">
                   <h1 className="text-lg sm:text-xl md:text-2xl lg:3xl font-bold">Spesifikasjoner</h1>
                   <p>Materiale: Høyverdig stål</p>
