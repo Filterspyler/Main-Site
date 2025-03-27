@@ -20,8 +20,8 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex space-x-6 text-md z-100">
-            <a href="/products" className="hover:text-gray-300 transition">Home</a>
-            <a href="#" className="hover:text-gray-300 transition">Product</a>
+            <a href="#" className="hover:text-gray-300 transition">Home</a>
+            <a href="Products" className="hover:text-gray-300 transition">Product</a>
             <a href="#" className="hover:text-gray-300 transition">Purchase</a>
             </div>
 
