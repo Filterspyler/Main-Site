@@ -12,16 +12,16 @@ const Product = () => {
         .catch((error) => {
             console.error('There was an error fetching the data:', error);
         });
-    }, []);j
+    }, []);
 
     return (
         <div>
-        <h1>Product List</h1>
-        <ul>
-            {products.map((product) => (
-                <li key={product.id}>{product.name}</li>
-            ))}
-        </ul>
+            <h1>Product List</h1>
+            <ul>
+                {products.map((product) => (
+                    <li key={product.id}>{product.name}</li>
+                ))}
+            </ul>
         </div>
     );
 };
