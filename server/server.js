@@ -30,8 +30,13 @@ app.get('/products', (req, res) => {
     ]);
 });
 
+// Serve static files for the frontend
+const frontendPath = path.join(__dirname, '../client/public');
+app.use(express.static(frontendPath));
+
+// Catch-all route for serving the React app
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
+    res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
 app.get("/", (req, res) => res.send("Server is running..."));
