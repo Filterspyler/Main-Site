@@ -1,7 +1,9 @@
 // frontend/src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import './styles/index.css';
 import Home from './components/Pages/Home';
 import Products from './components/Pages/Products';
